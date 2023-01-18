@@ -1868,6 +1868,11 @@ video {
   border-bottom-width: 1px;
 }
 
+.border-y-2 {
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+}
+
 .border-t {
   border-top-width: 1px;
 }
@@ -1882,6 +1887,10 @@ video {
 
 .border-l {
   border-left-width: 1px;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
 }
 
 .border-solid {
@@ -1906,6 +1915,21 @@ video {
 
 .border-none {
   border-style: none;
+}
+
+.border-slate-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(100 116 139 / var(--tw-border-opacity));
+}
+
+.border-slate-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(71 85 105 / var(--tw-border-opacity));
+}
+
+.border-b-slate-600 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(71 85 105 / var(--tw-border-opacity));
 }
 
 .bg-white {
