@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="output.css" rel="stylesheet">
+  <script src="js/default.js"></script>
 </head>
 
 <body>
@@ -35,7 +36,8 @@
             </a>
           </div>
           <div class="flex lg:hidden">
-            <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+            <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            onclick="open_menu()">
               <span class="sr-only">Open main menu</span>
               <!-- Heroicon name: outline/bars-3 -->
               <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -56,7 +58,7 @@
         </nav>
         <!-- Mobile menu, show/hide based on menu open state. -->
         <div role="dialog" aria-modal="true">
-          <div focus="true" class="hidden fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden">
+          <div focus="true" id="main_menu" class="hidden fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden">
             <div class="flex h-9 items-center justify-between">
               <div class="flex">
                 <a href="#" class="-m-1.5 p-1.5">
@@ -66,7 +68,8 @@
               </div>
               <div class="flex">
                 <button type="button"
-                  class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                  class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+                  onclick="close_menu()">
                   <span class="sr-only">Close menu</span>
                   <!-- Heroicon name: outline/x-mark -->
                   <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -79,22 +82,18 @@
             <div class="mt-6 flow-root">
               <div class="-my-6 divide-y divide-gray-500/10">
                 <div class="space-y-2 py-6">
-                  <a href="#products"
+                  <a href="#products" onclick="close_menu()"
                     class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">Products</a>
 
-                  <a href="#"
+                  <a href="#equipments" onclick="close_menu()"
                     class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">Features</a>
 
-                  <a href="#"
-                    class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">Marketplace</a>
-
-                  <a href="#company"
+                  <a href="#company" onclick="close_menu()"
                     class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">Company</a>
                 </div>
                 <div class="py-6">
-                  <a href="#"
-                    class="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-400/10">Log
-                    in</a>
+                  <a href="#contact" onclick="close_menu()"
+                    class="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-400/10">Contact us</a>
                 </div>
               </div>
             </div>
