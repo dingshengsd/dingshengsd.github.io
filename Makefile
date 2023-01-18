@@ -3,3 +3,6 @@ all:
 
 watch:
 	tailwindcss -i input.css -o output.css --watch
+
+setup:
+	npm install
