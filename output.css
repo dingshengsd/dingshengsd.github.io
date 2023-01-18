@@ -567,6 +567,10 @@ video {
   --tw-aspect-h: 9;
 }
 
+.aspect-h-10 {
+  --tw-aspect-h: 10;
+}
+
 .aspect-w-1 {
   position: relative;
   padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
@@ -641,34 +645,6 @@ video {
 
 .aspect-h-\[var\(--height\)\] {
   --tw-aspect-h: var(--height);
-}
-
-.aspect-h-1 {
-  --tw-aspect-h: 1;
-}
-
-.aspect-h-10 {
-  --tw-aspect-h: 10;
-}
-
-.aspect-w-4 {
-  position: relative;
-  padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
-  --tw-aspect-w: 4;
-}
-
-.aspect-w-4 > * {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.aspect-h-3 {
-  --tw-aspect-h: 3;
 }
 
 .aspect-none {
@@ -2272,11 +2248,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .font-semibold {
   font-weight: 600;
 }
@@ -2844,26 +2815,6 @@ video {
     }
   }
 
-  .sm\:aspect-w-2 {
-    position: relative;
-    padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
-    --tw-aspect-w: 2;
-  }
-
-  .sm\:aspect-w-2 > * {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-
-  .sm\:aspect-h-1 {
-    --tw-aspect-h: 1;
-  }
-
   .sm\:aspect-w-16 {
     position: relative;
     padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
@@ -2974,26 +2925,6 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:aspect-w-1 {
-    position: relative;
-    padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
-    --tw-aspect-w: 1;
-  }
-
-  .lg\:aspect-w-1 > * {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-
-  .lg\:aspect-h-1 {
-    --tw-aspect-h: 1;
-  }
-
   .lg\:aspect-w-16 {
     position: relative;
     padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
@@ -3134,26 +3065,6 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:aspect-w-7 {
-    position: relative;
-    padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
-    --tw-aspect-w: 7;
-  }
-
-  .xl\:aspect-w-7 > * {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-
-  .xl\:aspect-h-8 {
-    --tw-aspect-h: 8;
-  }
-
   .xl\:aspect-w-16 {
     position: relative;
     padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
@@ -3170,32 +3081,8 @@ video {
     left: 0;
   }
 
-  .xl\:aspect-h-9 {
-    --tw-aspect-h: 9;
-  }
-
   .xl\:aspect-h-10 {
     --tw-aspect-h: 10;
-  }
-
-  .xl\:aspect-w-4 {
-    position: relative;
-    padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
-    --tw-aspect-w: 4;
-  }
-
-  .xl\:aspect-w-4 > * {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-
-  .xl\:aspect-h-3 {
-    --tw-aspect-h: 3;
   }
 
   .xl\:grid-cols-4 {
