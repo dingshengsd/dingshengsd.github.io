@@ -2172,6 +2172,10 @@ video {
   padding-bottom: 2rem;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -3054,10 +3058,6 @@ video {
 
   .xl\:aspect-h-10 {
     --tw-aspect-h: 10;
-  }
-
-  .xl\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .xl\:grid-cols-3 {
